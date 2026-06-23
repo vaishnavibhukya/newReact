@@ -1,59 +1,113 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
 }
 
-.container {
-  width: 400px;
-  margin: 50px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.app{
+  min-height:100vh;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  padding:20px;
+  color:#fff;
 }
 
-h1 {
-  text-align: center;
+.home{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
-.input-box {
-  display: flex;
-  gap: 10px;
+.home h1{
+  font-size:3rem;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
+.home button{
+  margin-top:20px;
 }
 
-button {
-  padding: 10px 15px;
-  cursor: pointer;
+.dashboard{
+  max-width:900px;
+  margin:auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  padding: 10px;
-  background: #eee;
-  border-radius: 5px;
+.form{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: gray;
+input,select{
+  padding:10px;
+  border:none;
+  border-radius:8px;
 }
 
-.delete-btn {
-  background: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
+button{
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#00c853;
+  color:white;
+}
+
+.task-card{
+  background:white;
+  color:black;
+  padding:15px;
+  border-radius:12px;
+  margin:10px 0;
+  display:flex;
+  justify-content:space-between;
+}
+
+.delete{
+  background:red;
+  margin-left:10px;
+}
+
+.wishlist{
+  display:flex;
+  gap:10px;
+  margin:15px 0;
+}
+
+.wish-card{
+  background:white;
+  color:black;
+  padding:10px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.stats{
+  margin-top:20px;
+}
+
+.progress{
+  width:100%;
+  height:20px;
+  background:#ddd;
+  border-radius:10px;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.fill{
+  height:100%;
+  background:#00e676;
+}
+
+.dark{
+  background:#121212;
 }
